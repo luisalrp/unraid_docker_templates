@@ -1,0 +1,60 @@
+<Container version="2">
+  <Name>witnet_node</Name>
+  <Repository>witnet/witnet-rust</Repository>
+  <Registry>https://hub.docker.com/r/witnet/witnet-rust</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project>https://witnet.io/</Project>
+  <Overview>Full node of the Witnet Oracle. The decentralized oracle that is true to the censorship resistant nature of blockchains.&#xD;
+&#xD;
+Without a reliable oracle, smart contracts can be vulnerable to hacks, corruption and monetary loss.&#xD;
+&#xD;
+Witnet leverages state-of-the-art cryptographic and economic techniques to provide your smart contracts with secure data input.&#xD;
+&#xD;
+Without a reliable oracle, smart contracts can be vulnerable to hacks, corruption and monetary loss.&#xD;
+&#xD;
+To let other nodes in the network find your node, ensure port 21337 is forwarded from your router to the P2P port set below.&#xD;
+&#xD;
+The node is open-source, in case you want to verify the code, just go to the repository: https://github.com/witnet/witnet-rust &#xD;
+&#xD;
+For further reading, head youself to the docs, qhere you will find information for newbies, developes, node operators and a developers reference to help to integrate it in your project: https://docs.witnet.io/</Overview>
+  <Category>Crypto: Tools: Other: Network:Web Network:Other</Category>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://cryptototem.com/wp-content/uploads/2018/06/witnet-logo.jpg</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1658049844</DateInstalled>
+  <DonateText/>Send a tip if you consider the template valuable :)</DonateText>
+  <DonateLink/>https://github.com/luisalrp/unraid_docker_templates/blob/main/donate.md</DonateLink>
+  <Description>Full node of the Witnet Oracle. The decentralized oracle that is true to the censorship resistant nature of blockchains.&#xD;
+&#xD;
+Without a reliable oracle, smart contracts can be vulnerable to hacks, corruption and monetary loss.&#xD;
+&#xD;
+Witnet leverages state-of-the-art cryptographic and economic techniques to provide your smart contracts with secure data input.</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>21337</HostPort>
+        <ContainerPort>21337</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/witnet</HostDir>
+      <ContainerDir>/.witnet</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment/>
+  <Labels/>
+  <Config Name="app_dir" Target="/.witnet" Default="" Mode="rw" Description="Container Path: /.witnet" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/witnet</Config>
+  <Config Name="port" Target="21337" Default="21337" Mode="tcp" Description="Container Port: 21337" Type="Port" Display="always" Required="false" Mask="false">21337</Config>
+</Container>

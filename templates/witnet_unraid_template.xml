@@ -29,8 +29,8 @@ For further reading, head youself to the docs, qhere you will find information f
   <PostArgs/>
   <CPUset/>
   <DateInstalled>1658049844</DateInstalled>
-  <DonateText/>Send a tip if you consider the template valuable :)</DonateText>
-  <DonateLink/>https://github.com/luisalrp/unraid_docker_templates/blob/main/donate.md</DonateLink>
+  <DonateText>Send a tip if you consider the template valuable :)</DonateText>
+  <DonateLink>https://github.com/luisalrp/unraid_docker_templates/blob/main/donate.md</DonateLink>
   <Description>Full node of the Witnet Oracle. The decentralized oracle that is true to the censorship resistant nature of blockchains.&#xD;
 &#xD;
 Without a reliable oracle, smart contracts can be vulnerable to hacks, corruption and monetary loss.&#xD;
